@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
-
+import Swal from "sweetalert2";
 const AddCar = () => {
   const handleAddCar = (event) => {
     event.preventDefault();
@@ -14,7 +14,29 @@ const AddCar = () => {
     const rating = form.rating.value;
     const description = form.description.value;
     const newCar = { name, photo, type, price, rating, description };
-    console.log(newCar);
+      console.log(newCar);
+      
+      //   sending the data to the server
+      fetch("http://localhost:5000/car", {
+          method: 'POST',
+          headers: {
+              'content-type': 'application/json'
+          },
+          body: JSON.stringify(newCar)
+      })
+          .then(res => res.json())
+          .then(data => {
+              console.log(data);
+              if (data.insertedId) {
+                  Swal.fire({
+                      title: 'Success!',
+                      text: 'User Added Successfully',
+                      icon: 'success',
+                      confirmButtonText: 'Cool'
+                })
+            }
+      })
+      
   };
 
   const { user } = useContext(AuthContext);

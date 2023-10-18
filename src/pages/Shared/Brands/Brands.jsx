@@ -33,7 +33,7 @@ const Brands = () => {
                     to={`/brandDetails/${brand.id}`}
                     className="btn bg-red-500 hover:bg-red-700 text-white"
                   >
-                    Learn More
+                    Explore
                   </Link>
                 </div>
               </div>
