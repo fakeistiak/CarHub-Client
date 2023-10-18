@@ -7,6 +7,9 @@ import Home from "../pages/Home/Home";
 import Register from "../pages/Register/Register";
 import BrandDetails from "../pages/Home/BrandDetails/BrandDetails";
 import Brands from "../pages/Shared/Brands/Brands";
+import AddCar from "../pages/AddCar/AddCar";
+import UpdateCar from "../pages/UpdateCar/UpdateCar";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +34,16 @@ const router = createBrowserRouter([
         element: <Brands></Brands>    
       },
       {
+        path: "/addCar",
+        element: <AddCar></AddCar>
+      },
+      {
+        path: "/updateCar",
+        element: <UpdateCar></UpdateCar>
+      },
+      {
         path: "/brandDetails/:id",
-        element: <BrandDetails></BrandDetails>,
+        element: <PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
         loader: () => fetch("/brands.json"),
       },
     ],

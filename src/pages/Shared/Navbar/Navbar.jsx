@@ -18,10 +18,10 @@ const Navbar = () => {
         <NavLink to="/brands">Brands</NavLink>
       </li>
       <li className="font-bold">
-        <NavLink to="/contact">Contact Us</NavLink>
+        <NavLink to="/addCar">Add Car</NavLink>
       </li>
       <li className="font-bold">
-        <NavLink to="/Demo">Demo</NavLink>
+        <NavLink to="/updateCar">Update Car</NavLink>
       </li>
       <li className="font-bold">
         <NavLink to="/services">Services</NavLink>
@@ -51,7 +51,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-pink-500 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
           >
             {navLinks}
           </ul>
