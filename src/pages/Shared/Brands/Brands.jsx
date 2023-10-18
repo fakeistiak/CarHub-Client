@@ -13,16 +13,16 @@ const Brands = () => {
 
 
     return (
-      <div className="bg-white">
+      <div>
         <div className=" px-6 py-10 mx-auto">
-          <h1 className="text-2xl font-bold text-center text-gray-800 capitalize lg:text-5xl dark:text-white py-8">
-            <span className="text-red-500">Our Brands</span>
+          <h1 className="text-2xl font-bold text-gray-800 capitalize lg:text-5xl dark:text-white py-8">
+            <span className="text-black">Our Brands</span>
           </h1>
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 ">
             {brands.map((brand, index) => (
               <div
                 key={index}
-                className="flex items-end overflow-hidden bg-cover rounded-lg h-96"
+                className="flex items-end overflow-hidden bg-cover rounded-3xl shadow-black shadow-2xl h-96"
                 style={{ backgroundImage: `url(${brand.image})` }}
               >
                 <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg ">

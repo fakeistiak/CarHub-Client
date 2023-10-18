@@ -4,7 +4,7 @@ const Blog = () => {
       <div>
         <section className="bg-white border-y-2">
           <div className="container px-6 py-10 mx-auto">
-            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl text-black">
+            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
               explore our <br /> awesome Components
             </h1>
 

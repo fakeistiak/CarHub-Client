@@ -6,6 +6,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home";
 import Register from "../pages/Register/Register";
 import BrandDetails from "../pages/Home/BrandDetails/BrandDetails";
+import Brands from "../pages/Shared/Brands/Brands";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +27,14 @@ const router = createBrowserRouter([
         element: <Register></Register>,
         },
         {
-            path: "/brandDetails",
-            element: <BrandDetails></BrandDetails>
-      }
-      
+            path: "/brands",
+        element: <Brands></Brands>    
+      },
+      {
+        path: "/brandDetails/:id",
+        element: <BrandDetails></BrandDetails>,
+        loader: () => fetch("/brands.json"),
+      },
     ],
   },
 ]);

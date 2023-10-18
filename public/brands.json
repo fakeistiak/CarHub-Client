@@ -1,26 +1,50 @@
-[  
-        {
-            "name": "BMW",
-            "image": "https://i.ibb.co/p198pK0/philippe-oursel-Zopo-Sy-TT-GM-unsplash.jpg"
-        },
-        {
-            "name": "MERCEDES",
-            "image": "https://i.ibb.co/zJn5VdT/jesper-brouwers-m-U6o-D7asny-M-unsplash.jpg"
-        },
-        {
-            "name": "TOYOTA",
-            "image": "https://i.ibb.co/FxgpGy1/sadman-nafis-oz5ml-CJUCTI-unsplash.jpg"
-        },
-        {
-            "name": "AUDI",
-            "image": "https://i.ibb.co/FgnS8T2/troy-spoelma-n-LKA-uf-LRHU-unsplash.jpg"
-        },
-        {
-            "name": "HONDA",
-            "image": "https://i.ibb.co/cx9CsF7/chris-liverani-RAPzu-M1q-Fig-unsplash.jpg"
-        },
-        {
-            "name": "NISSAN",
-            "image": "https://i.ibb.co/SJ3qgCS/mikhail-pushkarev-a-T3-Ex-Crta-U-unsplash.jpg"
-        }
+[
+    {
+        "id": 1,
+        "name": "BMW",
+        "image": "https://i.ibb.co/p198pK0/philippe-oursel-Zopo-Sy-TT-GM-unsplash.jpg",
+        "image1":"https://i.ibb.co/WkKCpTB/devon-janse-van-rensburg-yoq-HLUay-UTg-unsplash.jpg",
+        "image2":"https://i.ibb.co/jkNyf5Q/jon-koop-kh-YVy-Hi-NZo0-unsplash.jpg",
+        "image3":"https://i.ibb.co/kXgj8X5/zan-1-BWBi-UUT-AA-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "MERCEDES",
+        "image": "https://i.ibb.co/zJn5VdT/jesper-brouwers-m-U6o-D7asny-M-unsplash.jpg",
+        "image1":"https://i.ibb.co/w0TgNbq/yellow2-unsplash.jpg",
+        "image2":"https://i.ibb.co/7ScLmVq/maybach2-unsplash-Copy.jpg",
+        "image3":"https://i.ibb.co/SP6Xh5c/gwagon2-unsplash-Copy.jpg"
+    },
+    {
+        "id": 3,
+        "name": "TOYOTA",
+        "image": "https://i.ibb.co/FxgpGy1/sadman-nafis-oz5ml-CJUCTI-unsplash.jpg",
+        "image1":"https://i.ibb.co/Wn1xRM3/supraaa-unsplash.jpg",
+        "image2":"https://i.ibb.co/fpNJ3xM/toyotaa-unsplash.jpg",
+        "image3":"https://i.ibb.co/vVjCjX9/supra-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "AUDI",
+        "image": "https://i.ibb.co/FgnS8T2/troy-spoelma-n-LKA-uf-LRHU-unsplash.jpg",
+        "image1":"https://i.ibb.co/2nsS48g/q5-unsplash.jpg",
+        "image2":"https://i.ibb.co/gFCrzK2/r8-unsplash.jpg",
+        "image3":"https://i.ibb.co/7pmxGkg/bobbi-wu-b-G2rugxel-IE-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "HONDA",
+        "image": "https://i.ibb.co/cx9CsF7/chris-liverani-RAPzu-M1q-Fig-unsplash.jpg",
+        "image1":"https://i.ibb.co/NpTLdkt/eli-clouse-G48s1-FJb-WE-unsplash.jpg",
+        "image2":"https://i.ibb.co/Cbkxyh6/tom-strecker-Yvey-TDT-m28-unsplash.jpg",
+        "image3":"https://i.ibb.co/LRvwXgd/grace-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "NISSAN",
+        "image": "https://i.ibb.co/SJ3qgCS/mikhail-pushkarev-a-T3-Ex-Crta-U-unsplash.jpg",
+        "image1":"https://i.ibb.co/F0w2L2G/GTR2-unsplash.jpg",
+        "image2":"https://i.ibb.co/5kryMLK/gtr-unsplash.jpg",
+        "image3":"https://i.ibb.co/DGp9c2c/eee-unsplash.jpg"
+    }
 ]
