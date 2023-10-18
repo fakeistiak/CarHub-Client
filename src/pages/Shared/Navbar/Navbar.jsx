@@ -11,26 +11,26 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li>
+      <li className="font-bold">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
+      <li className="font-bold">
         <NavLink to="/team">Our Team</NavLink>
       </li>
-      <li>
+      <li className="font-bold">
         <NavLink to="/contact">Contact Us</NavLink>
       </li>
-      <li>
+      <li className="font-bold">
         <NavLink to="/Demo">Demo</NavLink>
       </li>
-      <li>
+      <li className="font-bold">
         <NavLink to="/services">Services</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar dark:bg-gray-900 text-white">
+    <div className="navbar bg-white border-y-2">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -56,9 +56,14 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <p className="btn btn-ghost normal-case text-xl font-bold">
-          <span className="text-pink-500">IAB Carz</span> 
-        </p>
+        <div className="normal-case text-xl font-bold">
+          {/* <span className="text-pink-500">IAB CARS</span> */}
+          <img
+            className="w-28 h-20"
+            src="https://i.ibb.co/fXC0KkR/logo.png"
+            alt=""
+          />
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -73,13 +78,13 @@ const Navbar = () => {
                 alt="User_avatar"
               />
             )}
-            <h1 className="text-lg text-white">{user && user?.displayName}</h1>
+            <h1 className="text-lg text-black">{user && user?.displayName}</h1>
           </div>
         </label>
         {user ? (
           <button
             onClick={handleSignOut}
-            className="btn btn-secondary text-white"
+            className="btn bg-red-500 hover:bg-red-700 text-white"
           >
             Sign Out
           </button>

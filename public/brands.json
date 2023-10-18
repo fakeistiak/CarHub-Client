@@ -1,0 +1,26 @@
+[  
+        {
+            "name": "BMW",
+            "image": "https://i.ibb.co/p198pK0/philippe-oursel-Zopo-Sy-TT-GM-unsplash.jpg"
+        },
+        {
+            "name": "MERCEDES",
+            "image": "https://i.ibb.co/zJn5VdT/jesper-brouwers-m-U6o-D7asny-M-unsplash.jpg"
+        },
+        {
+            "name": "TOYOTA",
+            "image": "https://i.ibb.co/FxgpGy1/sadman-nafis-oz5ml-CJUCTI-unsplash.jpg"
+        },
+        {
+            "name": "AUDI",
+            "image": "https://i.ibb.co/FgnS8T2/troy-spoelma-n-LKA-uf-LRHU-unsplash.jpg"
+        },
+        {
+            "name": "HONDA",
+            "image": "https://i.ibb.co/cx9CsF7/chris-liverani-RAPzu-M1q-Fig-unsplash.jpg"
+        },
+        {
+            "name": "NISSAN",
+            "image": "https://i.ibb.co/SJ3qgCS/mikhail-pushkarev-a-T3-Ex-Crta-U-unsplash.jpg"
+        }
+]

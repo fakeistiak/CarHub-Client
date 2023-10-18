@@ -14,9 +14,8 @@ const Register = () => {
     const email = form.get("email");
     const name = form.get("name");
     const photo = form.get("photo");
-    const birth = form.get("birth");
     const password = form.get("password");
-    console.log(email, password, name, photo, birth);
+    console.log(email, password, name, photo);
 
     if (
       password.length < 6 ||
@@ -46,24 +45,24 @@ const Register = () => {
 
   return (
     <div>
-      <header className="bg-gray-900 pattern">
+      <header className="bg-white pattern">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col items-center py-6 lg:h-[91vh] sm:h-screen lg:flex-row">
-            <div className="lg:w-1/2">
-              <h3 className="mt-2 text-6xl font-bold text-gray-100">
-                Hello <span className="text-pink-500">Guest</span>
+            <div>
+              <h3 className="mt-2 text-6xl font-bold text-black">
+                Hello <span className="text-red-500">Amigos</span>
                 <br />
-                <span className="text-pink-500">Register</span> Now
+                <span className="text-red-500">Sign up</span> Now
               </h3>
 
-              <p className="mt-4 text-gray-100">
+              <p className="mt-4 text-black">
                 Please Register to meet our team and know about us also you can
                 connect with us
               </p>
             </div>
 
             <div className="flex mt-8 lg:w-1/2 lg:justify-end lg:mt-0">
-              <div className="w-full max-w-md bg-white rounded-lg dark:bg-gray-800">
+              <div className="w-full max-w-md bg-white rounded-lg dark:bg-black">
                 <div className="px-6 py-8 text-center">
                   <h2 className="text-3xl font-bold text-gray-700 dark:text-white">
                     Register
@@ -80,7 +79,7 @@ const Register = () => {
                         placeholder="Name"
                         aria-label="Email address"
                       />
-                      <p className="text-start text-lg pt-2">Date Of Birth</p>
+                      {/* <p className="text-start text-lg pt-2">Date Of Birth</p>
 
                       <input
                         className="block w-full px-4 py-2 mt-2 placeholder-gray-400 bg-white border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-500 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:ring-blue-300 focus:outline-none focus:ring"
@@ -89,7 +88,7 @@ const Register = () => {
                         name="birth"
                         placeholder="Date Of Birth"
                         aria-label="Email address"
-                      />
+                      /> */}
                       <p className="text-start text-lg pt-2">Image</p>
 
                       <input
@@ -119,7 +118,7 @@ const Register = () => {
                       />
                     </div>
                     <div className="flex items-center justify-between mt-4">
-                      <button className="btn btn-secondary text-white w-full">
+                      <button className="btn bg-red-500 hover:bg-red-700 text-white w-full">
                         Register
                       </button>
                     </div>
@@ -128,7 +127,7 @@ const Register = () => {
                     Already have an Account?{" "}
                     <Link to="/login" className="text-blue-600 pl-2">
                       {" "}
-                      Login
+                        Sign in
                     </Link>
                   </p>
                 </div>

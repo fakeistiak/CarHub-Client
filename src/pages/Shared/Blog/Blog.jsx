@@ -2,22 +2,22 @@
 const Blog = () => {
     return (
       <div>
-        <section className="bg-white dark:bg-gray-700">
+        <section className="bg-white border-y-2">
           <div className="container px-6 py-10 mx-auto">
-            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl text-black">
               explore our <br /> awesome Components
             </h1>
 
             <div className="mt-2">
-              <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-3 h-1 ml-1 bg-blue-500 rounded-full"></span>
-              <span className="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
+              <span className="inline-block w-40 h-1 bg-red-500 rounded-full"></span>
+              <span className="inline-block w-3 h-1 ml-1 bg-red-500 rounded-full"></span>
+              <span className="inline-block w-1 h-1 ml-1 bg-red-500 rounded-full"></span>
             </div>
 
             <div className="mt-8 xl:mt-12 lg:flex lg:items-center">
               <div className="grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2">
                 <div className="space-y-3">
-                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -38,7 +38,7 @@ const Blog = () => {
                     New Components
                   </h1>
 
-                  <p className="text-gray-500 dark:text-gray-300">
+                  <p className="text-black">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Provident ab nulla quod dignissimos vel non corrupti
                     doloribus voluptatum eveniet
@@ -46,7 +46,7 @@ const Blog = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -73,7 +73,7 @@ const Blog = () => {
                     elegant Dark Mode
                   </h1>
 
-                  <p className="text-gray-500 dark:text-gray-300">
+                  <p className="text-black">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Provident ab nulla quod dignissimos vel non corrupti
                     doloribus voluptatum eveniet
@@ -81,7 +81,7 @@ const Blog = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -102,7 +102,7 @@ const Blog = () => {
                     Easy to customiztions
                   </h1>
 
-                  <p className="text-gray-500 dark:text-gray-300">
+                  <p className="text-black">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Provident ab nulla quod dignissimos vel non corrupti
                     doloribus voluptatum eveniet
@@ -110,7 +110,7 @@ const Blog = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-xl dark:text-white dark:bg-blue-500">
+                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -131,7 +131,7 @@ const Blog = () => {
                     Simple & clean designs
                   </h1>
 
-                  <p className="text-gray-500 dark:text-gray-300">
+                  <p className="text-black">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Provident ab nulla quod dignissimos vel non corrupti
                     doloribus voluptatum eveniet
