@@ -22,7 +22,7 @@ const BrandDetails = () => {
   
    const [getFixedBrand, setGetFixedBrand] = useState();
    useEffect(() => {
-     fetch(`http://localhost:5000/brand/${brand.names}`)
+     fetch(`http://localhost:5000/brand/${brand?.names}`)
        .then((res) => res.json())
        .then((data) => setGetFixedBrand(data));
    }, []);
@@ -68,7 +68,7 @@ const BrandDetails = () => {
           </div>
         </div>
         <div className="m-20">
-          <h1 className="text-6xl text-center pb-8">Total Card: {cars.length}</h1>
+          <h1 className="text-6xl text-center pb-12 font-bold py-8">Some Of Our Best Selling Cars</h1>
           <div className="grid md:grid-cols-2 gap-4">
         {
           getFixedBrand?.map(car => <AddedCard

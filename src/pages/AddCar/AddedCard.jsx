@@ -32,7 +32,8 @@ const AddedCard = ({ car }) => {
                 <h1 className="text-2xl font-bold text-white">{rating}</h1>
               </div>
             </div>
-            <Link to={`/addedCardDetails/${_id}`} className="btn bg-red-500 hover:bg-red-700">
+            
+            <Link to={`/addedCardDetails/${_id}`} className="btn bg-red-500 hover:bg-red-700 text-white">
               View More
             </Link>
           </div>

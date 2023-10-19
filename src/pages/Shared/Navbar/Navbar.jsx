@@ -26,6 +26,12 @@ const Navbar = () => {
       <li className="font-bold">
         <NavLink to="/feedback">Feedback</NavLink>
       </li>
+      <li className="font-bold">
+        <NavLink to="/addToCart">Cart</NavLink>
+      </li>
+      <li className="font-bold">
+        <NavLink to="/carts">My Cart</NavLink>
+      </li>
     </>
   );
 
