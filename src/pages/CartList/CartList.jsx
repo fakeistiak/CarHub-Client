@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const CartList = () => {
@@ -85,12 +86,12 @@ const CartList = () => {
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">${cart.price}</td>
                 <td className="whitespace-nowrap px-6 py-4">
-                  <button
-                    type="button"
+                  <Link
+                    to={`/updateCar/${cart?._id}`}
                     className="px-8 py-3 font-semibold rounded dark:bg-gray-100 dark:text-gray-800"
                   >
                     Update
-                  </button>
+                  </Link>
                 </td>
                 <td className="whitespace-nowrap px-6 py-4">
                   <button

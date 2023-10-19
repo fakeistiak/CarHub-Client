@@ -47,8 +47,14 @@ const router = createBrowserRouter([
         element: <AddCar></AddCar>,
       },
       {
-        path: "/updateCar",
+        path: "/updateCar/:id",
         element: <UpdateCar></UpdateCar>,
+        loader: async ({ params }) => {
+          const { id } = params;
+          const response = await fetch(`http://localhost:5000/carts/${id}`);
+          const data = await response.json();
+          return data; // Return the parsed JSON data from the API
+        },
       },
       {
         path: "/addedCard/:id",
