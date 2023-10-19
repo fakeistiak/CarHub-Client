@@ -18,7 +18,6 @@ const AddedCard = ({ car }) => {
           <img
             className="object-cover w-full h-80 mt-2"
             src={photo}
-            alt="NIKE AIR"
           />
 
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900">

@@ -18,7 +18,15 @@ const BrandDetails = () => {
       const brands = useLoaderData();
       console.log(brands);
       const brand = brands.find((item) => item.id === idNumber);
-      console.log(brand);
+  console.log(brand);
+  
+   const [getFixedBrand, setGetFixedBrand] = useState();
+   useEffect(() => {
+     fetch(`http://localhost:5000/brand/${brand.names}`)
+       .then((res) => res.json())
+       .then((data) => setGetFixedBrand(data));
+   }, []);
+  console.log(getFixedBrand);
     return (
       <>
         <h1 className="text-3xl py-8 text-center font-bold">
@@ -63,7 +71,7 @@ const BrandDetails = () => {
           <h1 className="text-6xl text-center pb-8">Total Card: {cars.length}</h1>
           <div className="grid md:grid-cols-2 gap-4">
         {
-          cars.map(car => <AddedCard
+          getFixedBrand?.map(car => <AddedCard
             key={car._id}
             car={car}
             ></AddedCard>)
