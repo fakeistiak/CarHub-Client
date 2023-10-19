@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const AddedCard = ({ car }) => {
-  const { name, brandName, photo, type, price, rating, description } = car;
+  const { name,_id, brandName, photo, type, price, rating, description } = car;
     return (
       <div>
         <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
@@ -23,7 +24,7 @@ const AddedCard = ({ car }) => {
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
             <div className="flex gap-8">
               <h1 className="text-lg font-bold text-white">Price: {price}$</h1>
-              <div className="rating flex">
+              <div className="rating flex items-center gap-1">
                 <input
                   type="radio"
                   name="rating-2"
@@ -32,7 +33,7 @@ const AddedCard = ({ car }) => {
                 <h1 className="text-2xl font-bold text-white">{rating}</h1>
               </div>
             </div>
-            <Link className="btn bg-red-500 hover:bg-red-700">
+            <Link to={`/addedCardDetails/${_id}`} className="btn bg-red-500 hover:bg-red-700">
               View More
             </Link>
           </div>

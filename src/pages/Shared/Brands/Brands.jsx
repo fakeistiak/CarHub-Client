@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
 
 const Brands = () => {
-    const [brands, setBrands] = useState([]);
-    
-
- useEffect(() => {
-   fetch("brands.json")
-     .then((res) => res.json())
-     .then((data) => setBrands(data));
- }, []);
+  const { brands } = useContext(AuthContext);
 
 
     return (

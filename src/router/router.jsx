@@ -11,6 +11,8 @@ import AddCar from "../pages/AddCar/AddCar";
 import UpdateCar from "../pages/UpdateCar/UpdateCar";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Feedback from "../pages/Shared/ContactUs/Feedback/Feedback";
+import AddedCardDetails from "../pages/AddCar/AddedCardDetails";
+import AddedCard from "../pages/AddCar/AddedCard";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,16 @@ const router = createBrowserRouter([
         element: <UpdateCar></UpdateCar>,
       },
       {
+        path: "/addedCard/:id",
+        element: <AddedCard></AddedCard>,
+        loader: () => fetch("http://localhost:5000/car"),
+      },
+      {
+        path: "/addedCardDetails/:id",
+        element: <AddedCardDetails></AddedCardDetails>,
+        loader: () => fetch("http://localhost:5000/car"),
+      },
+      {
         path: "/feedback",
         element: <Feedback></Feedback>,
       },
@@ -53,11 +65,7 @@ const router = createBrowserRouter([
             <BrandDetails></BrandDetails>
           </PrivateRoute>
         ),
-        loader: () =>
-          // Promise.all([
-            fetch("/brands.json"),
-            // fetch("http://localhost:5000/car"),
-          // ]),
+        loader: () => fetch("http://localhost:5000/brand"),
       },
     ],
   },

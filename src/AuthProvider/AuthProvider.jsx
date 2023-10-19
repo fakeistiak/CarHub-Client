@@ -11,6 +11,8 @@ import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
 
+
+
 const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
@@ -37,12 +39,21 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-  useEffect(() => {
+    const [brands, setBrands] = useState([]);
+    useEffect(() => {
+      fetch("http://localhost:5000/brand")
+        .then((res) => res.json())
+        .then((data) => setBrands(data));
+    }, []);
+  
+
+   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log("user in the on state changed", currentUser);
       setUser(currentUser);
       setLoading(false);
     });
+
     return () => {
       unSubscribe();
     };
@@ -55,6 +66,7 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     updateUser,
+    brands
   };
 
   return (
