@@ -5,7 +5,7 @@ const Blog = () => {
         <section className="bg-white border-y-2">
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-              explore our <br /> awesome Components
+              explore our <br /> awesome Features
             </h1>
 
             <div className="mt-2">
@@ -34,14 +34,15 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                    New Components
+                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                    Advanced Safety
                   </h1>
 
                   <p className="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                    Airbags provide impact protection. Collision avoidance
+                    systems use sensors to prevent accidents. Blind-spot
+                    monitoring alerts to avoid unseen obstacles, enhancing
+                    passenger safety.
                   </p>
                 </div>
 
@@ -69,14 +70,15 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                    elegant Dark Mode
+                  <h1 className="text-xl font-semibold text-gray-700 capitalize">
+                    Fuel Efficiency
                   </h1>
 
                   <p className="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                    High miles per gallon (MPG) ratings signify efficient fuel
+                    consumption, reducing costs. Hybrid options combine fuel
+                    efficiency and eco-friendliness, minimizing environmental
+                    impact.
                   </p>
                 </div>
 
@@ -98,14 +100,14 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Easy to customiztions
+                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                    Advanced Technology
                   </h1>
 
                   <p className="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                    Infotainment systems offer entertainment and information.
+                    Smartphone integration syncs with the car's tech, making it
+                    user-friendly. GPS navigation aids convenient travel.
                   </p>
                 </div>
 
@@ -127,14 +129,15 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize dark:text-white">
-                    Simple & clean designs
+                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                    Comfortable Interior
                   </h1>
 
                   <p className="text-black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident ab nulla quod dignissimos vel non corrupti
-                    doloribus voluptatum eveniet
+                    Quality materials create a luxurious ambiance. Adjustable
+                    seating accommodates various preferences. Ample legroom
+                    ensures passenger comfort. Climate control maintains an
+                    ideal environment for a pleasant journey.
                   </p>
                 </div>
               </div>

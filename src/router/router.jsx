@@ -10,6 +10,7 @@ import Brands from "../pages/Shared/Brands/Brands";
 import AddCar from "../pages/AddCar/AddCar";
 import UpdateCar from "../pages/UpdateCar/UpdateCar";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import Feedback from "../pages/Shared/ContactUs/Feedback/Feedback";
 
 const router = createBrowserRouter([
   {
@@ -28,23 +29,35 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
-        },
-        {
-            path: "/brands",
-        element: <Brands></Brands>    
+      },
+      {
+        path: "/brands",
+        element: <Brands></Brands>,
       },
       {
         path: "/addCar",
-        element: <AddCar></AddCar>
+        element: <AddCar></AddCar>,
       },
       {
         path: "/updateCar",
-        element: <UpdateCar></UpdateCar>
+        element: <UpdateCar></UpdateCar>,
+      },
+      {
+        path: "/feedback",
+        element: <Feedback></Feedback>,
       },
       {
         path: "/brandDetails/:id",
-        element: <PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
-        loader: () => fetch("/brands.json"),
+        element: (
+          <PrivateRoute>
+            <BrandDetails></BrandDetails>
+          </PrivateRoute>
+        ),
+        loader: () =>
+          // Promise.all([
+            fetch("/brands.json"),
+            // fetch("http://localhost:5000/car"),
+          // ]),
       },
     ],
   },

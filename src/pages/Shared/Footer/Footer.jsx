@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
       <div>
-        <footer className="bg-white">
+        <footer className="bg-white border-y-2">
           <div className="container p-6 mx-auto">
             <div className="lg:flex">
               <div className="w-full -mx-6 lg:w-2/5">
@@ -16,8 +16,7 @@ const Footer = () => {
                   </a>
 
                   <p className="max-w-sm mt-2 ">
-                    Join 31,000+ other and never miss out on new tips,
-                    tutorials, and more.
+                    We have 100+ brands and 31,000+ cars and never miss out on new features and update keep in touch with us
                   </p>
 
                   <div className="flex mt-6 -mx-2">

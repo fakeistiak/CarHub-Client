@@ -8,12 +8,13 @@ const AddCar = () => {
     const form = event.target;
 
     const name = form.name.value;
+    const brandName = form.brandName.value;
     const photo = form.photo.value;
     const type = form.type.value;
     const price = form.price.value;
     const rating = form.rating.value;
     const description = form.description.value;
-    const newCar = { name, photo, type, price, rating, description };
+    const newCar = { name,brandName, photo, type, price, rating, description };
       console.log(newCar);
       
       //   sending the data to the server
@@ -72,6 +73,17 @@ const AddCar = () => {
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
             </div>
+            <div>
+              <label className="text-gray-700 dark:text-gray-200">
+                Brand Name
+              </label>
+              <input
+                type="text"
+                name="brandName"
+                placeholder="Brand Name"
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+              />
+            </div>
 
             <div>
               <label className="text-gray-700 dark:text-gray-200">
@@ -96,9 +108,10 @@ const AddCar = () => {
                 type="text"
                 name="type"
                 placeholder="Sedan / SUV"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                            
               />
-            </div>
+                      </div>
 
             <div>
               <label
@@ -118,14 +131,14 @@ const AddCar = () => {
             <div>
               <label className="text-gray-700 dark:text-gray-200">Rating</label>
               <input
-                type="number"
+                type="text"
                 name="rating"
                 placeholder="Rating"
                 className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
             </div>
 
-            <div>
+            <div className="">
               <label className="text-gray-700 dark:text-gray-200">
                 Description
               </label>
@@ -133,7 +146,7 @@ const AddCar = () => {
                 type="text"
                 name="description"
                 placeholder="Description"
-                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                className="block w-full px-4 py-6 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
             </div>
           </div>

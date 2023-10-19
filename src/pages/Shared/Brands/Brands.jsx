@@ -20,23 +20,17 @@ const Brands = () => {
           </h1>
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2 ">
             {brands.map((brand, index) => (
-              <div
+              <Link to={`/brandDetails/${brand.id}`}
                 key={index}
-                className="flex items-end overflow-hidden bg-cover rounded-3xl shadow-black shadow-2xl h-96"
+                className="flex items-end overflow-hidden bg-cover rounded-3xl shadow-black shadow-xl h-96"
                 style={{ backgroundImage: `url(${brand.image})` }}
               >
                 <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg ">
                   <h2 className="mt-4 text-3xl font-bold pb-8 text-gray-800 capitalize dark:text-white">
-                    {brand.name}
+                    {brand.names}
                   </h2>
-                  <Link
-                    to={`/brandDetails/${brand.id}`}
-                    className="btn bg-red-500 hover:bg-red-700 text-white"
-                  >
-                    Explore
-                  </Link>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
