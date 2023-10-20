@@ -85,7 +85,7 @@ const CartList = () => {
                       </div>
                     </div>
                   </td>
-                  <td className="whitespace-nowrap font-semibold px-4 py-3 sm:px-6 sm:py-4">
+                  <td className="whitespace-nowrap text-black font-semibold px-4 py-3 sm:px-6 sm:py-4">
                     ${cart.price}
                   </td>
                   <td className="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4">

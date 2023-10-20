@@ -1,16 +1,15 @@
 # IAB CARS
 
-## [Website Live Link]() 
+## [Website Live Link]=>() 
 
 ### Webstie features
 
-- Users can find there 
+- Users can find here the best and there Favourite brands car with a decent price. We provide less price than the market value and also Suv and Sedan boths are avaialable.
 
--The implementation of private routes restricts access to specific sections of the application to authenticated users only. This ensures that sensitive information and features are accessible only to authorized individuals.
+-If users want any car from any brand which is not available in the website there is a add car section ,users can easily add a car with their desired features and we will add the car for those users. 
 
-- Users can access a variety of event planning services, including marriage, birthday, party, surprise party, and corporate events. Each service has a "Details" button, likely providing more information about the service. This feature allows users to explore different event planning options conveniently.
+- There is rating in every car so every users can see the feature before add to cart and if they didnt want anything from add to cart they can delete the item from the cart section also the can update an item from the update car section 
 
-- The fixed navbar provides a seamless and user-friendly navigation experience. Regardless of where users scroll on the page, they can easily access the main sections of the application, enhancing usability.
-- To streamline the registration and login process, the website offers users the option to use their existing Google or GitHub accounts to log in. This feature simplifies the user experience, as users don't need to remember yet another set of credentials.
+- Our website is user friendly for sure user can easily login with email and password if they dont have an account they can register and also Google login option is available to easily logged in with google.And they can toggle the dark and light mode using the button in the navbar.
 
-- The footer section serves as a valuable component for providing essential information, contact details, and perhaps links to social media profiles or other relevant resources. This adds professionalism and completeness to your application.
+- If any users want to contact with us they can easily can do that in before the footer section there is a contact us section and also a feedback section where the users can tell us about there journey in our websites and also give us feedback what to improve in future .
