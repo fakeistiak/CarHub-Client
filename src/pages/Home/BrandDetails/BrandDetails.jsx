@@ -29,11 +29,11 @@ const BrandDetails = () => {
   console.log(getFixedBrand);
     return (
       <>
-        <h1 className="text-3xl py-8 text-center font-bold">
+        <h1 className="text-3xl py-8 text-center font-bold bg-pink-100">
           Let's Explore <span className="text-red-500">{brand.names}</span>
         </h1>
         <div className="carousel w-full">
-          <div id="slide1" className="carousel-item relative w-full">
+          <div id="slide1" className="carousel-item relative w-full ">
             <img src={brand.image1} className="w-full" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide3" className="btn btn-circle">
@@ -67,17 +67,16 @@ const BrandDetails = () => {
             </div>
           </div>
         </div>
-        <div className="m-20">
-          <h1 className="text-6xl text-center pb-12 font-bold py-8">Some Of Our Best Selling Cars</h1>
-          <div className="grid md:grid-cols-2 gap-4">
-        {
-          getFixedBrand?.map(car => <AddedCard
-            key={car._id}
-            car={car}
-            ></AddedCard>)
-          }
+        <div className="p-20 border-y-2 bg-pink-100">
+          <h1 className="text-6xl text-center pb-12 font-bold py-8 text-red-600">
+            Our Best Selling Cars
+          </h1>
+          <div className="grid md:grid-cols-2 gap-16 justify-center">
+            {getFixedBrand?.map((car) => (
+              <AddedCard key={car._id} car={car}></AddedCard>
+            ))}
           </div>
-          </div>
+        </div>
       </>
     );
 };

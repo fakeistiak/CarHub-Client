@@ -5,7 +5,7 @@ const AddedCard = ({ car }) => {
   const { name,_id, brandName, photo, type, price, rating, description } = car;
     return (
       <div>
-        <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="max-w-xl shadow-2xl shadow-purple-400 overflow-hidden bg-pink-100 rounded-xl dark:bg-gray-800">
           <div className="px-6 py-2">
             <h1 className="text-xl font-bold text-gray-800 uppercase dark:text-white">
               {name}
@@ -15,10 +15,7 @@ const AddedCard = ({ car }) => {
             </p>
           </div>
 
-          <img
-            className="object-cover w-full h-80 mt-2"
-            src={photo}
-          />
+          <img className="object-cover w-full h-80 mt-2" src={photo} />
 
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900">
             <div className="flex gap-8">
@@ -32,8 +29,11 @@ const AddedCard = ({ car }) => {
                 <h1 className="text-2xl font-bold text-white">{rating}</h1>
               </div>
             </div>
-            
-            <Link to={`/addedCardDetails/${_id}`} className="btn bg-red-500 hover:bg-red-700 text-white">
+
+            <Link
+              to={`/addedCardDetails/${_id}`}
+              className="btn bg-red-500  hover:bg-red-700 text-white"
+            >
               View More
             </Link>
           </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-white border-y-2">
+    <div className="navbar bg-gray-100 border-y-2">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
             onClick={handleSignOut}
             className="btn bg-red-500 hover:bg-red-700 text-white"
           >
-            Sign Out
+            Log Out
           </button>
         ) : (
           <Link to="/login">

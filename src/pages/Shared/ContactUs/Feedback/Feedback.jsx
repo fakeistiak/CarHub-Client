@@ -179,7 +179,7 @@ const Feedback = () => {
                       </label>
                       <input
                         type="text"
-                        placeholder="John Doe"
+                        placeholder="Name"
                         className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                       />
                     </div>
@@ -190,7 +190,7 @@ const Feedback = () => {
                       </label>
                       <input
                         type="email"
-                        placeholder="johndoe@example.com"
+                        placeholder="E-mail"
                         className="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                       />
                     </div>
@@ -201,7 +201,7 @@ const Feedback = () => {
                       </label>
                       <textarea
                         className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                        placeholder="Message"
+                        placeholder="Feedback here..."
                       ></textarea>
                     </div>
 

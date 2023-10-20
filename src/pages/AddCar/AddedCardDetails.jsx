@@ -36,9 +36,9 @@ const AddedCardDetails = () => {
     });
   };
   return (
-    <div className="pl-32 py-20">
-      <div className="max-w-7xl max-h-3x overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-        <img className="object-cover w-full h-96" src={photo} alt="Article" />
+    <div className=" py-20 flex justify-center bg-pink-100">
+      <div className="max-w-7xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        <img className="object-cover w-full h-[600px]" src={photo} alt="Article" />
 
         <div className="p-6">
           <div>
@@ -56,7 +56,7 @@ const AddedCardDetails = () => {
               everyday driving.
             </p>
             <p className="text-white font-semibold text-xl pb-2">
-              Price: {price}$
+              Price: {price} $
             </p>
           </div>
           <button

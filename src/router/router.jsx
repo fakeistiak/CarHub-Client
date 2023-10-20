@@ -13,7 +13,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Feedback from "../pages/Shared/ContactUs/Feedback/Feedback";
 import AddedCardDetails from "../pages/AddCar/AddedCardDetails";
 import AddedCard from "../pages/AddCar/AddedCard";
-import AddToCart from "../pages/AddCar/AddToCart";
+// import AddToCart from "../pages/AddCar/AddToCart";
 import CartList from "../pages/CartList/CartList";
 
 const router = createBrowserRouter([
@@ -30,10 +30,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login></Login>,
       },
-      {
-        path: "/addToCart",
-        element: <AddToCart></AddToCart>,
-      },
+      
       {
         path: "/register",
         element: <Register></Register>,

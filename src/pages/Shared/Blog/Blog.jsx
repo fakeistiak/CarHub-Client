@@ -2,7 +2,7 @@
 const Blog = () => {
     return (
       <div>
-        <section className="bg-white border-y-2">
+        <section className="bg-pink-100 border-y-2">
           <div className="container px-6 py-10 mx-auto">
             <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
               explore our <br /> awesome Features
@@ -10,13 +10,13 @@ const Blog = () => {
 
             <div className="mt-2">
               <span className="inline-block w-40 h-1 bg-red-500 rounded-full"></span>
-              <span className="inline-block w-3 h-1 ml-1 bg-red-500 rounded-full"></span>
-              <span className="inline-block w-1 h-1 ml-1 bg-red-500 rounded-full"></span>
+              <span className="inline-block w-20 h-1 ml-1 bg-red-500 rounded-full"></span>
+              <span className="inline-block w-12 h-1 ml-1 bg-red-500 rounded-full"></span>
             </div>
 
             <div className="mt-8 xl:mt-12 lg:flex lg:items-center">
               <div className="grid w-full grid-cols-1 gap-8 lg:w-1/2 xl:gap-16 md:grid-cols-2">
-                <div className="space-y-3">
+                <div className="space-y-3 shadow-xl shadow-purple-400 p-8">
                   <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ const Blog = () => {
                   </p>
                 </div>
 
-                <div className="space-y-3">
-                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
+                <div className="space-y-3 shadow-xl shadow-purple-400 p-8">
+                  <span clas8Name="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -82,8 +82,8 @@ const Blog = () => {
                   </p>
                 </div>
 
-                <div className="space-y-3">
-                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
+                <div className="space-y-3 shadow-xl shadow-purple-400 p-8">
+                  <span clas8Name="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
@@ -111,8 +111,8 @@ const Blog = () => {
                   </p>
                 </div>
 
-                <div className="space-y-3">
-                  <span className="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
+                <div className="space-y-3 shadow-xl shadow-purple-400 p-8">
+                  <span clas8Name="inline-block p-3 text-red-500 bg-red-100 rounded-xl dark:text-white dark:bg-red-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
