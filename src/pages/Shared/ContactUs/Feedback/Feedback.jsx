@@ -168,8 +168,8 @@ const Feedback = () => {
 
               <div className="mt-8 lg:w-1/2 lg:mx-6">
                 <div className="w-full px-8 py-10 mx-auto overflow-hidden bg-white shadow-2xl rounded-xl dark:bg-gray-900 lg:max-w-xl">
-                  <h1 className="text-xl font-medium text-gray-700 dark:text-gray-200">
-                    Contact form
+                  <h1 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">
+                    Give us Feedback
                   </h1>
 
                   <form className="mt-4">

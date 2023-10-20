@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login></Login>,
       },
-      
+
       {
         path: "/register",
         element: <Register></Register>,
@@ -41,11 +41,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/addCar",
-        element: <AddCar></AddCar>,
+        element: (
+          <PrivateRoute>
+            <AddCar></AddCar>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/updateCar/:id",
-        element: <UpdateCar></UpdateCar>,
+        element: (
+          <PrivateRoute>
+            <UpdateCar></UpdateCar>
+          </PrivateRoute>
+        ),
         loader: async ({ params }) => {
           const { id } = params;
           const response = await fetch(`http://localhost:5000/carts/${id}`);
@@ -55,12 +63,21 @@ const router = createBrowserRouter([
       },
       {
         path: "/addedCard/:id",
-        element: <AddedCard></AddedCard>,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <AddedCard></AddedCard>
+          </PrivateRoute>
+        ),
         loader: () => fetch("http://localhost:5000/car"),
       },
       {
         path: "/addedCardDetails/:id",
-        element: <AddedCardDetails></AddedCardDetails>,
+        element: (
+          <PrivateRoute>
+            <AddedCardDetails></AddedCardDetails>
+          </PrivateRoute>
+        ),
         loader: () => fetch("http://localhost:5000/car"),
       },
       {
@@ -69,16 +86,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/brandDetails/:id",
-        element: (
-          <PrivateRoute>
-            <BrandDetails></BrandDetails>
-          </PrivateRoute>
-        ),
+        element: <BrandDetails></BrandDetails>,
         loader: () => fetch("http://localhost:5000/brand"),
       },
       {
         path: "/carts",
-        element: <CartList />,
+        element: (
+          <PrivateRoute>
+            {" "}
+            <CartList />
+          </PrivateRoute>
+        ),
       },
     ],
   },

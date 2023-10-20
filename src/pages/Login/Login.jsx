@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <div>
-      <header className="pattern">
+      <header className="pattern bg-pink-100">
         <div className="container px-8 mx-auto">
           <div className="flex flex-col items-center justify-center h-screen">
             <h3 className="text-6xl font-bold">

@@ -45,7 +45,7 @@ const Register = () => {
 
   return (
     <div>
-      <header className="bg-white pattern">
+      <header className="bg-pink-100 pattern">
         <div className="container px-6 mx-auto">
           <div className="flex flex-col items-center py-6 lg:h-[91vh] sm:h-screen lg:flex-row">
             <div>

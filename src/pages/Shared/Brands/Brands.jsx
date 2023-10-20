@@ -8,7 +8,7 @@ const Brands = () => {
 
     return (
       <div>
-        <div className=" mx-auto bg-pink-100">
+        <div className=" mx-auto bg-base-100">
           <h1 className="text-2xl font-bold text-gray-800 capitalize lg:text-5xl dark:text-white py-8">
             <span className="text-red-500 text-center">Our Brands</span>
           </h1>

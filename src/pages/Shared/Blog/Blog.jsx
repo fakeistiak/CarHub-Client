@@ -2,9 +2,9 @@
 const Blog = () => {
     return (
       <div>
-        <section className="bg-pink-100 border-y-2">
+        <section className="bg-base-100 border-y-2">
           <div className="container px-6 py-10 mx-auto">
-            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
+            <h1 className="text-2xl font-semibold capitalize lg:text-3xl">
               explore our <br /> awesome Features
             </h1>
 
@@ -34,11 +34,11 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                  <h1 className="text-xl font-semibold capitalize ">
                     Advanced Safety
                   </h1>
 
-                  <p className="text-black">
+                  <p>
                     Airbags provide impact protection. Collision avoidance
                     systems use sensors to prevent accidents. Blind-spot
                     monitoring alerts to avoid unseen obstacles, enhancing
@@ -70,11 +70,11 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize">
+                  <h1 className="text-xl font-semibold capitalize">
                     Fuel Efficiency
                   </h1>
 
-                  <p className="text-black">
+                  <p>
                     High miles per gallon (MPG) ratings signify efficient fuel
                     consumption, reducing costs. Hybrid options combine fuel
                     efficiency and eco-friendliness, minimizing environmental
@@ -100,11 +100,11 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                  <h1 className="text-xl font-semibold0 capitalize ">
                     Advanced Technology
                   </h1>
 
-                  <p className="text-black">
+                  <p>
                     Infotainment systems offer entertainment and information.
                     Smartphone integration syncs with the car's tech, making it
                     user-friendly. GPS navigation aids convenient travel.
@@ -129,11 +129,11 @@ const Blog = () => {
                     </svg>
                   </span>
 
-                  <h1 className="text-xl font-semibold text-gray-700 capitalize ">
+                  <h1 className="text-xl font-semibold capitalize ">
                     Comfortable Interior
                   </h1>
 
-                  <p className="text-black">
+                  <p>
                     Quality materials create a luxurious ambiance. Adjustable
                     seating accommodates various preferences. Ample legroom
                     ensures passenger comfort. Climate control maintains an
