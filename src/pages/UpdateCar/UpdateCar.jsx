@@ -119,7 +119,7 @@ const UpdateCar = () => {
               value="Add Coffee"
               className="px-8 py-2.5 leading-5 text-white transition-colors duration-300 transform bg-red-500 rounded-md hover:bg-red-700 w-full focus:outline-none"
             >
-              Add Car
+              Update Car
             </button>
           </form>
         </section>

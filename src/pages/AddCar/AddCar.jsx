@@ -44,7 +44,7 @@ const AddCar = () => {
   console.log(user?.displayName);
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 pb-20">
       <div className="flex flex-col items-center p-2 ">
         <i>
           <h1 className="text-4xl font-bold">

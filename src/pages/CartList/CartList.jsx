@@ -34,79 +34,84 @@ const CartList = () => {
 
   return (
     <div>
-      <table className="min-w-full divide-y divide-gray-200 overflow-x-auto">
-        <thead className="bg-gray-50">
-          <tr>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
-            >
-              Name
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
-            >
-              Price{" "}
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
-            >
-              Update
-            </th>
-            <th
-              scope="col"
-              className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500"
-            >
-              Delete
-            </th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-gray-200 bg-white">
-          {allCart?.map((cart, i) => {
-            return (
-              <tr key={i}>
-                <td className="whitespace-nowrap px-6 py-4">
-                  <div className="flex items-center">
-                    <div className="h-10 w-10 flex-shrink-0">
-                      <img
-                        className="h-10 w-10 rounded-full"
-                        src={cart.photo}
-                        alt=""
-                      />
-                    </div>
-                    <div className="ml-4">
-                      <div className="text-sm font-medium text-gray-900">
-                        {cart.name}
+      <div className="overflow-x-auto">
+        <table className="min-w-full divide-y divide-purple-500">
+          <thead className="bg-gray-200">
+            <tr>
+              <th
+                scope="col"
+                className="px-4 py-2 sm:px-6 sm:py-3 text-left text-xs sm:text-sm uppercase tracking-wider font-semibold"
+              >
+                Name
+              </th>
+              <th
+                scope="col"
+                className="px-4 py-2 sm:px-8 sm:py-3 text-left text-xs sm:text-sm font-semibold uppercase tracking-wider"
+              >
+                Price
+              </th>
+              <th
+                scope="col"
+                className="px-4 py-2 sm:px-12 sm:py-3 text-left text-xs sm:text-sm font-semibold uppercase tracking-wider"
+              >
+                Update
+              </th>
+              <th
+                scope="col"
+                className="px-4 py-2 sm:px-8 sm:py-3 text-left text-xs sm:text-sm font-medium uppercase tracking-wider"
+              >
+                Delete
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200 bg-green-300">
+            {allCart?.map((cart, i) => {
+              return (
+                <tr key={i}>
+                  <td className="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4">
+                    <div className="flex items-center">
+                      <div className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0">
+                        <img
+                          className="h-8 w-8 sm:h-10 sm:w-10 rounded-full"
+                          src={cart.photo}
+                          alt=""
+                        />
                       </div>
-                      <div className="text-sm text-gray-500">{cart.type}</div>
+                      <div className="ml-2 sm:ml-4">
+                        <div className="text-xs sm:text-sm font-medium text-gray-900">
+                          {cart.name}
+                        </div>
+                        <div className="text-xs text-gray-500">{cart.type}</div>
+                      </div>
                     </div>
-                  </div>
-                </td>
-                <td className="whitespace-nowrap px-6 py-4">${cart.price}</td>
-                <td className="whitespace-nowrap px-6 py-4">
-                  <Link
-                    to={`/updateCar/${cart?._id}`}
-                    className="px-8 py-3 font-semibold rounded dark:bg-gray-100 dark:text-gray-800"
-                  >
-                    Update
-                  </Link>
-                </td>
-                <td className="whitespace-nowrap px-6 py-4">
-                  <button
-                    type="button"
-                    onClick={() => handleDelete(cart._id)}
-                    className="px-8 py-3 font-semibold rounded dark:bg-rose-100 dark:text-gray-800"
-                  >
-                    X
-                  </button>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                  </td>
+                  <td className="whitespace-nowrap font-semibold px-4 py-3 sm:px-6 sm:py-4">
+                    ${cart.price}
+                  </td>
+                  <td className="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4">
+                    <Link
+                      to={`/updateCar/${cart?._id}`}
+                      className="px-4 sm:px-8 py-2 sm:py-3 font-semibold rounded dark:bg-sky-400 hover:bg-blue-500 dark:text-white"
+                    >
+                      Update
+                    </Link>
+                  </td>
+                  <td className="whitespace-nowrap px-4 py-3 sm:px-6 sm:py-4">
+                    <button
+                      type="button"
+                      onClick={() => handleDelete(cart._id)}
+                      className="px-4 sm:px-8 py-2 sm:py-3 font-bold rounded dark:bg-rose-500 hover:bg-red-600 text-xl sm:text-2xl dark:text-white"
+                    >
+                      X
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <div className="h-60"></div>
     </div>
   );
 };

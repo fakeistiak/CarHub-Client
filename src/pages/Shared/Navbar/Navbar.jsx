@@ -2,7 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../AuthProvider/AuthProvider";
 const Navbar = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
 
   const handleToggle = (e) => {
     if (e.target.checked) {
@@ -10,14 +12,13 @@ const Navbar = () => {
     } else {
       setTheme("light");
     }
-  }
+  };
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
     const localTheme = localStorage.getItem("theme");
     document.querySelector("html").setAttribute("data-theme", localTheme);
   }, [theme]);
-
 
   const { user, logOut } = useContext(AuthContext);
 
@@ -71,15 +72,15 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <div className="normal-case text-xl font-bold text-center">
+        <div className="normal-case font-bold text-center">
           <img
-            className="w-28 h-20"
+            className="lg:w-40 pr-10 lg:h-24 sm:w-10 sm:h-10"
             src="https://i.ibb.co/fXC0KkR/logo.png"
             alt=""
           />
 
-          <h1 className="text-lg font-bold ">
-            <span className="text-red-500">IAB</span> CARS
+          <h1 className="lg:text-2xl sm:text-sm pr-8 font-bold">
+            <span className="text-red-500">CARS</span>
           </h1>
         </div>
       </div>
@@ -89,9 +90,7 @@ const Navbar = () => {
       <div className="navbar-end">
         {/* dark mode theme code here */}
 
-
-
-        <label className="swap swap-rotate">
+        <label className="swap swap-rotate h-5 w-5">
           <input onChange={handleToggle} type="checkbox" />
           <svg
             className="swap-on fill-current w-10 h-10"
@@ -108,14 +107,8 @@ const Navbar = () => {
             <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
           </svg>
         </label>
-
-
-
-
-
-
         <label tabIndex={0}>
-          <div className="flex flex-col items-center p-2 ">
+          <div className="flex flex-col items-center px-4">
             {user && (
               <img
                 className="w-10 h-10 avatar rounded-full object-cover"
@@ -123,7 +116,7 @@ const Navbar = () => {
                 alt="User_avatar"
               />
             )}
-            <h1 className="text-lg text-black">{user && user?.displayName}</h1>
+            <h1 className="lg:text-lg sm:text-sm text-black">{user && user?.displayName}</h1>
           </div>
         </label>
         {user ? (
