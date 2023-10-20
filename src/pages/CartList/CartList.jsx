@@ -8,9 +8,11 @@ const CartList = () => {
   const [refetch, setrefetch] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/carts").then((res) => {
-      setAllCart(res.data);
-    });
+    axios
+      .get("https://assignment-10-k90fiwama-fakeistiak.vercel.app/carts")
+      .then((res) => {
+        setAllCart(res.data);
+      });
   }, [refetch]);
 
   const handleDelete = (id) => {
@@ -24,10 +26,14 @@ const CartList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/carts/${id}`).then((res) => {
-          setrefetch(!refetch);
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
-        });
+        axios
+          .delete(
+            `https://assignment-10-k90fiwama-fakeistiak.vercel.app/carts/${id}`
+          )
+          .then((res) => {
+            setrefetch(!refetch);
+            Swal.fire("Deleted!", "Your file has been deleted.", "success");
+          });
       }
     });
   };

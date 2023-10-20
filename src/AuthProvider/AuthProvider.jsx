@@ -11,8 +11,6 @@ import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext(null);
 
-
-
 const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
@@ -39,15 +37,14 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
 
-    const [brands, setBrands] = useState([]);
-    useEffect(() => {
-      fetch("http://localhost:5000/brand")
-        .then((res) => res.json())
-        .then((data) => setBrands(data));
-    }, []);
-  
+  const [brands, setBrands] = useState([]);
+  useEffect(() => {
+    fetch("https://assignment-10-k90fiwama-fakeistiak.vercel.app/brand")
+      .then((res) => res.json())
+      .then((data) => setBrands(data));
+  }, []);
 
-   useEffect(() => {
+  useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log("user in the on state changed", currentUser);
       setUser(currentUser);
@@ -66,7 +63,7 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     updateUser,
-    brands
+    brands,
   };
 
   return (

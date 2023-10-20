@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         ),
         loader: async ({ params }) => {
           const { id } = params;
-          const response = await fetch(`http://localhost:5000/carts/${id}`);
+          const response = await fetch(`https://assignment-10-k90fiwama-fakeistiak.vercel.app/carts/${id}`);
           const data = await response.json();
           return data; // Return the parsed JSON data from the API
         },
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
             <AddedCard></AddedCard>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/car"),
+        loader: () => fetch("https://assignment-10-k90fiwama-fakeistiak.vercel.app/car"),
       },
       {
         path: "/addedCardDetails/:id",
@@ -78,7 +78,7 @@ const router = createBrowserRouter([
             <AddedCardDetails></AddedCardDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/car"),
+        loader: () => fetch("https://assignment-10-k90fiwama-fakeistiak.vercel.app/car"),
       },
       {
         path: "/feedback",
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
       {
         path: "/brandDetails/:id",
         element: <BrandDetails></BrandDetails>,
-        loader: () => fetch("http://localhost:5000/brand"),
+        loader: () => fetch("https://assignment-10-k90fiwama-fakeistiak.vercel.app/brand"),
       },
       {
         path: "/carts",

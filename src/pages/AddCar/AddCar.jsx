@@ -14,30 +14,29 @@ const AddCar = () => {
     const price = form.price.value;
     const rating = form.rating.value;
     const description = form.description.value;
-    const newCar = { name,brandName, photo, type, price, rating, description };
-      console.log(newCar);
-      
-      //   sending the data to the server
-      fetch("http://localhost:5000/car", {
-          method: 'POST',
-          headers: {
-              'content-type': 'application/json'
-          },
-          body: JSON.stringify(newCar)
-      })
-          .then(res => res.json())
-          .then(data => {
-              console.log(data);
-              if (data.insertedId) {
-                  Swal.fire({
-                      title: 'Success!',
-                      text: 'User Added Successfully',
-                      icon: 'success',
-                      confirmButtonText: 'Cool'
-                })
-            }
-      })
-      
+    const newCar = { name, brandName, photo, type, price, rating, description };
+    console.log(newCar);
+
+    //   sending the data to the server
+    fetch("https://assignment-10-k90fiwama-fakeistiak.vercel.app/car", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newCar),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "User Added Successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+        }
+      });
   };
 
   const { user } = useContext(AuthContext);
@@ -108,10 +107,9 @@ const AddCar = () => {
                 type="text"
                 name="type"
                 placeholder="Sedan / SUV"
-                              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
-                            
+                className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
               />
-                      </div>
+            </div>
 
             <div>
               <label
